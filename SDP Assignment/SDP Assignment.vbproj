@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37058EFA-CF6A-4824-9C27-FA39F64EF0E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SDP_Assignment.My.MyApplication</StartupObject>
+    <RootNamespace>SDP_Assignment</RootNamespace>
+    <AssemblyName>SDP Assignment</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SDP Assignment.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SDP Assignment.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SchedulerAClassroomMenu.Designer.vb">
+      <DependentUpon>SchedulerAClassroomMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerAClassroomMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerAIntakeMenu.Designer.vb">
+      <DependentUpon>SchedulerAIntakeMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerAIntakeMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerCAvailability.Designer.vb">
+      <DependentUpon>LecturerCAvailability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerCAvailability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerFeedback.Designer.vb">
+      <DependentUpon>LecturerFeedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerFeedback.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerCAvailability.Designer.vb">
+      <DependentUpon>SchedulerCAvailability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerCAvailability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerGExtraClass.Designer.vb">
+      <DependentUpon>SchedulerGExtraClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerGExtraClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMExtraClass.Designer.vb">
+      <DependentUpon>SchedulerMExtraClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMExtraClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLoginPage.Designer.vb">
+      <DependentUpon>UserLoginPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserLoginPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerMM.Designer.vb">
+      <DependentUpon>LecturerMM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerMM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerRequest.Designer.vb">
+      <DependentUpon>LecturerRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerVT.Designer.vb">
+      <DependentUpon>LecturerVT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerVT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerClassroomMenu.Designer.vb">
+      <DependentUpon>SchedulerClassroomMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerClassroomMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerGTimetableMenu.Designer.vb">
+      <DependentUpon>SchedulerGTimetableMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerGTimetableMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMTimetableMenu.Designer.vb">
+      <DependentUpon>SchedulerMTimetableMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMTimetableMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerResponseRCMenu.Designer.vb">
+      <DependentUpon>SchedulerResponseRCMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerResponseRCMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerResponseFCMenu.Designer.vb">
+      <DependentUpon>SchedulerResponseFCMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerResponseFCMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerResponseMenu.Designer.vb">
+      <DependentUpon>SchedulerResponseMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerResponseMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerTimetableMenu.Designer.vb">
+      <DependentUpon>SchedulerTimetableMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerTimetableMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerIntakeMenu.Designer.vb">
+      <DependentUpon>SchedulerIntakeMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerIntakeMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMClassroomMenu.Designer.vb">
+      <DependentUpon>SchedulerMClassroomMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMClassroomMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMIntakeMenu.Designer.vb">
+      <DependentUpon>SchedulerMIntakeMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMIntakeMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchedulerMM.Designer.vb">
+      <DependentUpon>SchedulerMM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerMM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFeedback.Designer.vb">
+      <DependentUpon>StudentFeedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFeedback.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StudentMM.Designer.vb">
+      <DependentUpon>StudentMM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRequest.Designer.vb">
+      <DependentUpon>StudentRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentVT.Designer.vb">
+      <DependentUpon>StudentVT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentVT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SchedulerAClassroomMenu.resx">
+      <DependentUpon>SchedulerAClassroomMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerAIntakeMenu.resx">
+      <DependentUpon>SchedulerAIntakeMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerCAvailability.resx">
+      <DependentUpon>LecturerCAvailability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerFeedback.resx">
+      <DependentUpon>LecturerFeedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerCAvailability.resx">
+      <DependentUpon>SchedulerCAvailability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerGExtraClass.resx">
+      <DependentUpon>SchedulerGExtraClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMExtraClass.resx">
+      <DependentUpon>SchedulerMExtraClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLoginPage.resx">
+      <DependentUpon>UserLoginPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerMM.resx">
+      <DependentUpon>LecturerMM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerRequest.resx">
+      <DependentUpon>LecturerRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerVT.resx">
+      <DependentUpon>LecturerVT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerClassroomMenu.resx">
+      <DependentUpon>SchedulerClassroomMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerGTimetableMenu.resx">
+      <DependentUpon>SchedulerGTimetableMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMTimetableMenu.resx">
+      <DependentUpon>SchedulerMTimetableMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerResponseRCMenu.resx">
+      <DependentUpon>SchedulerResponseRCMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerResponseFCMenu.resx">
+      <DependentUpon>SchedulerResponseFCMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerResponseMenu.resx">
+      <DependentUpon>SchedulerResponseMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerTimetableMenu.resx">
+      <DependentUpon>SchedulerTimetableMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerIntakeMenu.resx">
+      <DependentUpon>SchedulerIntakeMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMClassroomMenu.resx">
+      <DependentUpon>SchedulerMClassroomMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMIntakeMenu.resx">
+      <DependentUpon>SchedulerMIntakeMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchedulerMM.resx">
+      <DependentUpon>SchedulerMM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentFeedback.resx">
+      <DependentUpon>StudentFeedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMM.resx">
+      <DependentUpon>StudentMM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRequest.resx">
+      <DependentUpon>StudentRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentVT.resx">
+      <DependentUpon>StudentVT.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Click.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Error.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
